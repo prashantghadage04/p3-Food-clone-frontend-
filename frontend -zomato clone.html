@@ -1,0 +1,586 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+             
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right">
+           
+            <title>Zomato</title>
+
+            <style>
+
+body{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+    object-fit:cover;
+    margin-bottom: 4vh;
+}
+.header-image{
+    position:absolute;
+    top:-10vh;
+    z-index:-1;
+}
+.nav{
+    display: flex;
+    
+    justify-content: space-between;
+    color:white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.nav-bar{
+    display: flex;
+}
+.nav-bar li{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-left: 30px;
+    list-style: none;
+   
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:7vh;
+    align-items:center:
+}
+.logo{
+    width: 20vw;
+}
+.head h3{
+    font-size: 2.1em;
+    color:whitesmoke;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.search{
+    display:flex;
+    width:55vw;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px,0;
+}
+.search input{
+    outline:none;
+    border:none;
+    width: 50%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.search p{
+    color: gray;
+    border-right: 1px solid gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.search i:first-child{
+    font-size: 20px;
+    color:rgba(252,119,119);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search.i{
+    color:gray;
+    padding-left:10px;
+}
+.sec-1{
+    margin-right: 120px;
+    margin-left: 120px;
+   justify-content: space-between;
+    display: flex;
+   
+    margin-bottom: 13vh;
+}
+.box{
+    position: relative;
+    width: 265px;
+    margin: 3px 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rbg(243,240,240);
+}
+.box img{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgb(204 203 203);
+    z-index: -1;
+}
+.white{
+    position: absolute;
+    bottom: 3px;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    width:100%;
+    height: 25%;
+    z-index:2;
+}
+.white p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color:rgb(56,56,56);
+    letter-spacing: 0.7px;  
+}
+.middle{
+    margin:60px  150px;
+}
+.sec-2 h2{
+    font-size: 2.7rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.sec-2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sec-2 h6{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: lighter;
+    color:gray
+}
+.fa-caret-right,  .sec-2 span{
+    color:rgb;
+}
+.box-1{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+.box-1 div{
+    position: absolute;
+    background: linear-gradient();
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+}
+.box-1 div span:first-child{
+    display: inline-block;
+    color: white;
+    padding-left: 15px;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+.box-1 i{
+    color:white;
+    padding-bottom: 15px;
+}
+.box-1 img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+.sec-3{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    justify-content: space-between;
+}
+.box-2 div span{
+    color:rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sec-5{
+    display: flex;
+    margin: 90px 0px;
+    padding: 40px 0px;
+    justify-content: center;
+    color: rgb(255,248,248);
+}
+.flex{
+    display:flex ;
+}
+.contact{
+    width: 100%;
+    overflow:hidden;
+}
+.contact img{
+    margin-left: 200px;
+    width:450px;
+    height:450px;
+    padding-right: 50px; 
+}
+.address{
+    width: 470px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.address p{
+    padding-bottom: 10px;
+    font-size: 0.95rem;
+    color:black;
+}
+.address h2{
+    font-size:2.7rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    color:rgb(34 34 34 );
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 230px;
+    padding-bottom: 20px;
+}
+.radio label{
+    font-size: 1.1rem;
+    color:rgb(49 49 49);
+
+}
+.radio[type="radio"]{
+    accent-color: rgb(255 92 92);
+}
+.email{
+    position: relative;
+}
+.email input{
+    height: 46px;
+    border-radius: 5px;
+    width: 270px;
+    border:1px solid rgb(184 183 183);
+    outline:rgb(255 92 92);
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+.place{
+    position: absolute;
+    font-size:1.3rem;
+    left:15px;
+    top:13px;
+    color:gray;
+    font-weight: lighter;
+}
+.email button{
+    width: 150px;
+    border-radius: 6px;
+    border: 1px solid rgb(253 104 104);
+    background-color: rgb(253 104 104);
+    font-size: 1.1rem;
+    margin-left: 6px;
+    color:white;
+}
+.download{
+    font-size: 0.7rem;
+    margin-top: 27px;
+    margin-bottom: 0px;
+    color: gray;
+}
+.app img{
+    margin-left: 10px;
+    height:40px;
+    width:137px;
+}
+.first-img{
+    width: 128px;
+    height:32px;
+}
+.sec-7{
+    padding: 40px 120px;
+    background-color: rgb(244 244 253);
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.first-1{
+    display: flex;
+}
+.first-1 span{
+    padding: 10px;
+    border:1px solid black;
+    border-radius:5px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+   
+    margin: 30px 0;
+
+}
+.second div{
+    width:200px;
+}
+.second h4{
+    font-weight: lighter;
+    color:rgb(22 22 22);
+    white-space:nowrap;
+}
+.second a{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    text-decoration: none;
+    color:gray;
+    font-size:0.9rem;
+}
+.second img{
+    width: 1376px;
+    height: 40px;
+    margin-top: 11px;
+    cursor: pointer;
+
+}
+.box-4{
+    display: flex;
+    flex-direction: column;
+}
+.box-4 i{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.third{
+    padding:10px 0;
+    color:gray;
+    font-size: 0.7rem;
+}
+.footer_container {margin-top: 20px;
+    padding: 30px 0px 40px 0px;
+    background: #cbcdcf;
+    display: flex;
+    justify-content: space-evenly;
+}
+.name1{
+  margin-top: 80px;
+  border-radius: 30px;
+  height: 45px;
+}
+.head a{
+  text-decoration: none;
+}
+.head h2{
+  margin-left: -150px;
+  margin-top: 80px;
+text-transform: uppercase;
+color: #3e4152;
+letter-spacing: .15em;
+font-size: 2.0em;
+text-decoration: none;
+max-height: 5em;
+font-weight: 700;}  
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.hotel1{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+      text-decoration: none;
+   ;}
+.img1 {
+width:250px;
+height: 350px;
+border-radius: 8px;
+}
+.hotel1 a{
+text-decoration: none;
+}
+.hotel1 h2{ text-transform: uppercase;
+    color: #616268;
+    letter-spacing: 0.05em;
+    font-size: 1.3em;
+    text-decoration: none;
+    max-height: 5em;
+    font-weight: 700;}
+
+            </style>
+            <body>
+                <header>
+                    <div class="nav">
+
+                    <div>
+                    <h4>Get The App</h4>
+                </div>
+                <ul class="nav-bar">
+                    <li>Add Restaurant</li>
+                    <li>Log in</li>
+                    <li>Sign up</li>
+                </ul>
+                <div class="head">
+                    <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">
+                    <h3>Discover the best food and drinks in Delhi NCR</h3> 
+                    <div class="search">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ycm road,4,Hanu</p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="search for Restaurant,cuisine or a dish">
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" class="high-res-image" alt="" role="presentation">
+                </div>
+                </div>
+                </header>
+                <section class="sec-1">
+                    <div class="box">
+                        <div class="white"><p>Order Food Online</p></div>
+                        <img alt="Order Online" src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&amp;fit=around|402:360&amp;crop=402:360;*,*" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+                    </div>
+                    <div class="box">
+                        <div class="white"><p>Dining</p></div>
+                        <img alt="Dining" src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&amp;fit=around|402:360&amp;crop=402:360;*,*" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+                        </div>
+                            <div class="box">
+                                <div class="white"><p>Live Events</p></div>
+                                <img alt="Live Events" src="https://b.zmtcdn.com/data/o2_assets/371de657644f1b5818fcb5d83387c8c91722851940.png?output-format=webp&amp;fit=around|402:360&amp;crop=402:360;*,*" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+                                </div>
+                              </section>
+                              <section class="midddle">
+                                <div class="sec-2">
+                                    <h2>Collection</h2>
+                                    <div>
+                                        <h6>
+                                            Explore curated lists of top restusrants,cafes,pubs and bars in Delhi NCR,based on trends</h6>
+                                             <span>All collections in Pune <span class="material-symbols-outlined">
+                                                chevron_right
+                                                </span>
+                                    </div>
+                                </div>
+                                <div class="hotel1">
+                                    <a href="#">
+                                    <img class="img1" src="https://r1.ilikewallpaper.net/iphone-wallpapers/download/8238/Maldives-Ayada-Hotel-iphone-wallpaper-ilikewallpaper_com.jpg"><br> <h2 class="hello">Hotel 1</h2><h4>Location and reating</h4></a>
+                                    <a href="#">
+                                    <img class="img1" src="https://wallpapers.com/images/hd/las-vegas-iphone-venetian-hotel-pl6vuxnsi4xgbpwk.jpg"><h2>Hotel 2</h2><h4>Location and reating</h4>   </a>
+                                    <a href="#">
+                                    <img class="img1" src="https://e0.pxfuel.com/wallpapers/424/150/desktop-wallpaper-macau-china-best-hotels-travel-tourism.jpg"> <h2>Hotel 3</h2><h4>Location and reating</h4>  </a>
+                                    <a href="#">
+                                    <img class="img1" src="https://r1.ilikewallpaper.net/iphone-wallpapers/download/19277/Resort-Hotel-iphone-wallpaper-ilikewallpaper_com.jpg"> <h2>Hotel 4</h2><h4>Location and reating</h4>  </a>
+                                    
+                                
+                                
+                              </section>
+                              <section class="sec-5">
+                                <div class="flex contact">
+                                    <img  src="https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png" loading="auto" class="sc-s1isp7-5 jQwYOW">"
+                                    <div class="address">
+                                        <h2>Get the zomato app</h2>
+                                        <p>we will send you a link,open it on your phone to download the app</p>
+                                        <div class="flex radio">
+                                            <div>
+                                               
+                                                <input type="radio"  name=email  value="" id="email" checked>
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div>
+                                                
+                                                <input type="radio" name=phone value="" id="phone">
+                                                <label for="Phone">Phone</label>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="flex-email">
+                                            <input class="input" type="text">
+                                            <label for="" class="place">Email</label>
+                                            <button>Share app link</button>
+                                        </div>
+                                        <p class="download">Download the app</p>
+                                        <div class="flex app">
+                                            <img alt="image" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+                                            <img alt="image" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+                                        </div>
+                                   </div>
+                                </div>
+                              </section>
+                             <div class="footer">
+                                <div class="sec-7">
+                                    <div class="first">
+                                        <div>
+                                            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&amp;crop=198:42;*,*" alt="Zomato logo" class="sc-elhb8j-1 ixsoFB">
+                                        </div>
+                                        <div class="first-1">
+                                            <div>
+                                                <span>India</span>
+                                            </div>
+                                            <div>
+                                                <span>English</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer_column">
+                                            <h3>About Zomato
+                                              </h3>
+                                            <a href="#">Who We Are</a>
+                                            <a href="#">Blog</a>
+                                            <a href="#">Work With Us</a>
+                                            <a href="#">
+                                              Investor Relations</a>
+                                            <a href="#">
+                                              Report Fraud</a>
+                                            <a href="#">Report Fraud</a>
+                                            <a href="#">Press Kit</a>
+                                        </div>
+                                        <div class="footer_column">
+                                            <h3>Zomato universe 
+                                              </h3>
+                                            <a href="#"> Blinkit</a>
+                                            <a href="#"> District</a>
+                                            <a href="#">  Hyperpure</a>
+                                            <a href="#"> Weather Union</a>
+                                            <a href="#">Partner With Us</a>
+                                            <a href="#"> For Restaurants</a>
+                                            <a href="#">gift cardsr</a>
+                                        </div>
+                                        <div class="footer_column">
+                                            <h3>Learn More</h3>
+                                            <a href="#">Privacy</a>
+                                            <a href="#">security</a>
+                                            <a href="#">terms</a>
+                                            <a href="#">conditions</a>
+                                            <a href="#">Contact Us</a>
+                                            <a href="#">helpline</a>
+                                            <a href="#">email us</a>
+                                        </div>
+                                   
+                             
+
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                              </div>
+                
+
+            </body>
